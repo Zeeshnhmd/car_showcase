@@ -9,11 +9,14 @@ export interface CustomerButtonProps {
 	rightIcon?: string;
 	isDisabled?: boolean;
 }
-
+export interface OptionProps {
+	title: string;
+	value: string;
+}
 export interface CustomerFilterProps {
 	title: string;
+	options: OptionProps[];
 }
-
 export interface SearhManufacturerProps {
 	manufacturer: string;
 	setManufacturer: (manufacturer: string) => void;
@@ -32,4 +35,12 @@ export interface CarProps {
 	model: string;
 	transmission: string;
 	year: number;
+}
+
+export interface FilterProps {
+	manufacturer: string;
+	year: number;
+	fuel: string;
+	limit: number;
+	model: string;
 }
