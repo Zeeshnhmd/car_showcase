@@ -2,9 +2,9 @@
 
 import { Fragment } from 'react';
 import { Transition, Dialog } from '@headlessui/react';
+import Image from 'next/image';
 
 import { CarProps } from '@/types';
-import Image from 'next/image';
 import { generateCarImageUrl } from '@/utils';
 
 interface CarDetailsProp {
